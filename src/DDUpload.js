@@ -59,7 +59,7 @@
 			} else if (!!XMLHttpRequest && !!new XMLHttpRequest().sendAsBinary) {
 				// html5 XMLHttpRequest
 				this.xhr = window.ActiveXObject ? new window.ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest();
-				_.addEvent(c.target, 'drop', function (e) {
+                _.addEvent(c.target, 'drop', function (e) {
 					_this.html5Binary(e);
 				})
 			}
